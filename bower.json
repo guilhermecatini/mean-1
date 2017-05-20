@@ -1,0 +1,21 @@
+{
+  "name": "mean",
+  "description": "",
+  "main": "",
+  "authors": [
+    "Felipe Freitas <lipofreitas@yahoo.com.br>"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/feliperfreitas/mean",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "public/vendor",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7"
+  }
+}
