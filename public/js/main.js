@@ -37,6 +37,35 @@ function myConfig($stateProvider, $urlRouterProvider) {
     }
   })
 
+  .state('cnsProduto', {
+    url: '/produto',
+    views:{
+      '':{
+        templateUrl:'./views/cnsProduto.html',
+        controller:'ProdutoController',
+        controllerAs:'vm'
+      },
+      'menu':{
+        templateUrl:'./views/menu.html'
+      }
+    }
+  })
+
+  // Adicionei aqui pra caso de alteração do produto
+  .state('alterarProduto', {
+    url: '/produto/:id',
+    views:{
+      '':{
+        templateUrl:'./views/cnsProduto.html',
+        controller:'ProdutoController',
+        controllerAs:'vm'
+      },
+      'menu':{
+        templateUrl:'./views/menu.html'
+      }
+    }
+  })
+
 
   $urlRouterProvider.otherwise('/home')
 
